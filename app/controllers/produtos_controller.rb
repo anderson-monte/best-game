@@ -1,6 +1,21 @@
 class ProdutosController < ApplicationController
         before_action :set_produto, only: [:show, :edit, :update, :destroy]
-       #before_action :authenticate_usuario!
+        before_action :authenticate_usuario!, except: [:busca, :games, :hardware, :pdf]
+       
+       
+       
+       
+  def pdf (produto)
+     respond_to do |format|
+     format.html
+     format.pdf do
+       pdf = ProdutosPdf.new(produto)
+       send_data pdf.render, filename: "hello.pdf",
+                            type: "application/pdf",
+                            disposition: "inline"
+      end
+    end
+  end
   
   def busca
     @nome_buscado = params[:nome]
@@ -24,6 +39,7 @@ class ProdutosController < ApplicationController
   # GET /produtos/1
   # GET /produtos/1.json
   def show
+   pdf (@produto)
   end
 
   # GET /produtos/new

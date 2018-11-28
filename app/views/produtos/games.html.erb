@@ -6,9 +6,22 @@
           <% @produtos.each do |f| %> 
                 <div class="col-sm-3">
                   <div class="panel panel-primary">
-                  <div class="panel-heading"><% f.nome %></div>
+                  <div class="panel-heading"><%= f.nome %></div>
                   <div class="panel-body"><%= image_tag f.imagem.url(:medium), class: "img-responsive" %></div>
-                  <div class="panel-footer"><center><b>R$ </b><%= f.preco %></center></div>
+                  <div class="panel-footer">
+                     <%if usuario_signed_in? %>
+                     
+                     <div style="text-align: left;"><b><%= "R$: #{f.preco}" %></></div><div style="text-align: right;"><li><%= link_to  do
+                                                                            content_tag :span, "Comprar", :class => "glyphicon glyphicon-shopping-cart"
+                          end %></li></div>
+                     
+                     <%else %> 
+                     
+                     <center><b><%= "R$: #{f.preco}" %></b></center>
+                     
+                     <% end %>
+                     
+                     </div>
                   </div>
                 </div>
           <% end %> 

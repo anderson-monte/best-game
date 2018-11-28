@@ -27,3 +27,4 @@
               :method => 'delete',
               :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
               :class => 'btn btn-danger' %>
+ <%= link_to "PDF", produto_path(@produto, format: "pdf"), :class => 'btn btn-xs btn-info' %>
