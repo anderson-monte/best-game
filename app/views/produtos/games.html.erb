@@ -1,0 +1,17 @@
+<div class="page-header">
+  <h1><%=t '.title', :default => "Games" %></h1>
+</div>
+<div class="container-fluid" >
+  <div class="row nav_cor">
+          <% @produtos.each do |f| %> 
+                <div class="col-sm-3">
+                  <div class="panel panel-primary">
+                  <div class="panel-heading"><% f.nome %></div>
+                  <div class="panel-body"><%= image_tag f.imagem.url(:medium), class: "img-responsive" %></div>
+                  <div class="panel-footer"><center><b>R$ </b><%= f.preco %></center></div>
+                  </div>
+                </div>
+          <% end %> 
+  </div>
+  <center><%= will_paginate @produtos %></center>
+</div>

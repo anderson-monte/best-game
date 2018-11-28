@@ -1,0 +1,38 @@
+<head>
+ <style>
+   .sidebar {
+  padding: 30px;
+  background-color: #f2f2f2;
+}
+ </style>
+ </head>
+<body>
+  
+<div class="container-fluid" >
+  <div class="row nav_cor">
+    <div class="col-sm col-md-2 sidebar">
+      <ul class="nav nav-sidebar">
+          <h3>Ordene por: </h3>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+             Menor Preço
+           </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+          Nome
+        </div>
+     </ul>
+    </div>
+            <% @produtos.each do |f| %> 
+                <div class="col-sm-3">
+                    <div class="panel panel-primary">
+                      <div class="panel-body"><%= image_tag f.imagem.url(:medium), class: "img-responsive" %></div>
+                      <div class="panel-footer"><%= f.nome %></div>
+                      </div>
+                    </div>
+                <% end %> 
+  </div>
+ <center><%= will_paginate @produtos %></center>
+</div>
+</body>
+</html>
