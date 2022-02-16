@@ -12,6 +12,7 @@ Dependências: Verificar no arquito Gemfile.
 
 ** APP feito para aprendizado, com 3 Models. 
 
+---------------------------------------------------------------------
 
 This APP was made for a discipline of the Computer Science course,
 with the objective of making an games e-commerce.
