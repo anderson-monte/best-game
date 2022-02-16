@@ -1,24 +1,26 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Este APP foi feito para uma disciplina do curso Ciência da Computação,
+com objetivo de fazer um e-comerce de jogos. 
 
-Things you may want to cover:
+Versão do Ruby: 2.4.4
+Dabase: Postgree(Produção, Mysql (Dev)
 
-* Ruby version
+Para acessar no Heroku: https://bestgames2341.herokuapp.com/
 
-* System dependencies
+Dependências: Verificar no arquito Gemfile.
 
-* Configuration
+** APP feito para aprendizado, com 3 Models. 
 
-* Database creation
 
-* Database initialization
+This APP was made for a discipline of the Computer Science course,
+with the objective of making an games e-commerce.
 
-* How to run the test suite
+Ruby Version: 2.4.4
+Database: Postgree(Production, Mysql (Dev)
 
-* Services (job queues, cache servers, search engines, etc.)
+To access on Heroku: https://bestgames2341.herokuapp.com/
 
-* Deployment instructions
+Dependencies: Check in the Gemfile file.
 
-* ...
+** APP made for learning, with 3 Models. 
