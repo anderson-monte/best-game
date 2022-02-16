@@ -10,8 +10,9 @@ Para acessar no Heroku: https://bestgames2341.herokuapp.com/
 
 Dependências: Verificar no arquito Gemfile.
 
-** APP feito para aprendizado, com 3 Models. 
+** APP feitod para aprendizado, com 3 Models. 
 
+Feito em 2018
 ---------------------------------------------------------------------
 
 This APP was made for a discipline of the Computer Science course,
@@ -25,3 +26,5 @@ To access on Heroku: https://bestgames2341.herokuapp.com/
 Dependencies: Check in the Gemfile file.
 
 ** APP made for learning, with 3 Models. 
+
+Made in 2018
